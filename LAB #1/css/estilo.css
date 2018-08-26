@@ -1,0 +1,71 @@
+body{
+    background: url("1.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+#btnCambiarFondo{
+    padding: 15px;
+    font-size: 20px;
+    background: rgb(15, 146, 15);
+    color: white;
+}
+
+#btnCambiarFondo:hover{
+}
+
+#compartir-estado{
+    background: skyblue;
+    font-size: 30px;
+    width: 50%;
+    margin: 10px auto;
+    padding: 16px;
+    border-radius: 13px;   
+}
+
+#status{
+    font-size: 15px;
+    padding: 14px;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+#btnCompartir{
+    font-size: 15px;
+    padding: 14px;
+    background: rgb(15, 146, 15);
+    color: white;
+}
+
+#linea-tiempo{
+    /*background: skyblue;*/
+    width: 50%;
+    margin: 15px auto;
+}
+
+#estados{
+    list-style: none;
+}
+
+#estados li{
+    margin: 8px;
+    padding: 12px;
+    background: skyblue;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+#mapa{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    margin: 15px auto;
+    background: white;
+    border-radius: 13px;  
+}
+
+#servicio_web{
+    width: 100%;
+    height: 200px ;
+    background: greenyellow;
+}

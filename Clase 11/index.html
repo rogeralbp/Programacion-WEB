@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <body>
+        <header>
+            <nav></nav>
+        </header>
+        <aside>
+            <nav></nav>
+            <section>
+                <article>
+                    <h2>Esto es una prueba</h2>
+                    <p id="parrafo1">Parrafo 1</p>
+                    <p class="parrafo2">Parrafo 2</p>
+                    <button>Toque un boton para ocultar</button>
+                </article>
+                <article id="segundo">
+                    <h2>Cambio de eventos</h2>
+                    <p>Nombre</p>
+                    <input type="text" name="nombre">
+                    <p>Correo</p>
+                    <input type="text" name="correo">
+
+
+                    <button id="elementos">Toque el boton para ocultar o mostrar</button>
+                </article>
+                <article>
+                    <h2>Apariciones</h2>
+                    <div class="cuadrito" id="div1" style="width:80px;height:80px;
+            display:none;background-color:red;">
+                    </div>
+                    <br>
+                    <div class="cuadrito" id="div2" style="width:80px;height:80px;
+            display:none;background-color:green;">
+                    </div>
+                    <br>
+                    <div class="cuadrito" id="div3" style="width:80px;height:80px;
+            display:none;background-color:blue;">
+                    </div>
+
+                    <div id="animado" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+                    <button id="mostrar">Toque el boton para mostrar</button>
+                    <button id="eliminar">Toque el boton para eliminar</button>
+                </article>
+            </section>
+    </body>
+    <footer>
+    </footer>
+    <script>
+        $(document).ready(function () {
+            console.log("Hola Mundo");
+            $("button").click(function () {
+                // etiqueta     
+                // $("p").hide();
+                // identificador 
+                $("#parrafo1").hide();
+                $(".parrafo2").hide(10000);
+            });
+            $("p").click(function () {
+                $(this).hide();
+            });
+            $("#parrafo1").hover(function () {
+                alert("Paso por encima");
+            });
+            $("input").focus(function () {
+                $(this).css("background-color", "#cccccc");
+            });
+            $("#elementos").click(function () {
+                $("#segundo p").toggle(10000, function () {
+                    alert("Heeey me estan ocultando");
+                });
+            });
+            $("#mostrar").click(function () {
+                $("#div1").fadeIn();
+                $("#div2").fadeIn("slow");
+                $("#div3").fadeIn(3000);
+            });
+            $("#eliminar").click(function () {
+                $("#div1").fadeOut();
+                $("#div2").fadeOut("slow");
+                $("#div3").fadeOut(3000);
+            });
+            $(".cuadrito").click(function () {
+                $(this).slideToggle("slow");
+            });
+            $("#animado").click(function () {
+                $(this).animate({
+                    left: '250px'
+                });
+            });
+        });
+    </script>
+
+</html>
