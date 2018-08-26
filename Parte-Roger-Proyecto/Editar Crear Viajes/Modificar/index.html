@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./css/reset-modificar.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+	<link rel="stylesheet" href="./css/main-modificar.css">
+	<title>Viajes</title>
+</head>
+<body>
+
+		<div id="menu">
+				<ul>
+					<li><a href="file:///C:/Users/Roger/Desktop/Ejercicios%20WEB/Programacion-WEB/Parte-Roger-Proyecto/Editar%20Crear%20Viajes/Crear/index.html">Crear Viaje</a></li>
+					<li><a href="file:///C:/Users/Roger/Desktop/Ejercicios%20WEB/Programacion-WEB/Parte-Roger-Proyecto/Editar%20Crear%20Viajes/Modificar/index.html">Modificar Viaje</a></li>
+					<li><a href="file:///C:/Users/Roger/Desktop/Ejercicios%20WEB/Programacion-WEB/Parte-Roger-Proyecto/Editar%20Crear%20Viajes/Eliminar/index.html">Eliminar Viaje</a></li>
+				</ul>
+			</div>
+
+	<div class="container">
+		<div class="form__top">
+			<h2>Modificacion <span>Viajes</span></h2>
+		</div>		
+		<form class="form__reg" action="">
+
+				<label for="Viajes">Seleccione el viaje a Modificar:</label>
+				<select name="" id="Viajes">
+					<option value="">Ciudad Quesada-Cedral</option>
+					<option value="">Cedral-San Martin</option>
+					<option value="">San Martin-Florencia</option>
+					<option value="">Florencia-Los Angeles</option>
+					<option value="">Los Angeles-Fortuna</option>
+					<option value="">Fortuna-San Antonio</option>
+					<option value="">San Antonio-COTAI</option>
+					<option value="">COTAI-La Abundancia</option>
+					<option value="">La Abundacia-Estadio Carlos Ugalde Alvarez</option>
+					<option value="">Estadio Carlos Ugalde Alvarez-Hospital</option>
+					<option value="">Hospital-San Martin</option>
+				</select>
+				
+			<label for="lugarInicio">Nuevo Lugar Salida</label>
+			<select name="" id="lugarInicio">
+				<option value="">Ciudad Quesada</option>
+				<option value="">Cedral</option>
+				<option value="">San Martin</option>
+				<option value="">Florencia</option>
+				<option value="">Los Angeles</option>
+				<option value="">Fortuna</option>
+				<option value="">San Antonio</option>
+				<option value="">COTAI</option>
+				<option value="">La Abundacia</option>
+				<option value="">Estadio Carlos Ugalde Alvarez</option>
+				<option value="">Hospital</option>
+			</select>
+            <label for="lugarDestino">Nuevo Lugar Destino</label>
+			<select name="" id="lugarDestino">
+				<option value="">Ciudad Quesada</option>
+				<option value="">Cedral</option>
+				<option value="">San Martin</option>
+				<option value="">Florencia</option>
+				<option value="">Los Angeles</option>
+				<option value="">Fortuna</option>
+				<option value="">San Antonio</option>
+				<option value="">COTAI</option>
+				<option value="">La Abundacia</option>
+				<option value="">Estadio Carlos Ugalde Alvarez</option>
+				<option value="">Hospital</option>
+			</select>
+            
+            <input class="input" type="text" placeholder="&#36;  Nuevo Precio" required>
+            <div class="btn__form">
+            	<input class="btn__submit" type="submit" value="GUARDAR CAMBIOS VIAJE" id="btnSubmit">
+            	<input class="btn__reset" type="reset" value="LIMPIAR">	
+            </div>
+		</form>
+	</div>
+	
+	<script src="js/app.js"></script>
+</body>
+</html>
