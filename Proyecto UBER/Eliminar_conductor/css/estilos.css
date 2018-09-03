@@ -1,0 +1,122 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  
+  color: white;
+  font-family: "Helvetica, Arial, Sans-serif"; }
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+.wrap {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto; }
+
+.main {
+  width: 100%;
+  min-height: 1500px; }
+
+.seccionToggle {
+
+  height: calc(100vh - 50px);
+  background: #4CA1AF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+  color: #001F3F;
+  padding: 50px 0;
+  text-align: center; }
+  .seccionToggle h2 {
+    font-size: 60px;
+    margin-top: 50px; }
+  .seccionToggle p {
+    font-size: 20px;
+    margin-bottom: 50px; }
+  
+    
+
+.btn-toggle {
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  background: #00B4DB;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   text-align: center; }
+  .btn-toggle:hover {
+    text-decoration: none; }
+
+@media screen and (max-width: 500px) {
+  .seccionToggle h2 {
+    margin-top: 0; } }
+@media screen and (max-height: 550px) {
+  .seccionToggle h2 {
+    font-size: 40px;
+    margin-top: 0; } }
+#btnDl{
+  background: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 20px 40px;
+  display: inline-block;
+  border: 5px solid #001F3F;
+  transition: 0.3s all ease; }
+  .seccionToggle button:hover {
+    border: 5px solid #0074D9;
+    color: #0074D9; }
+
+    
+form{
+    width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+
+}
+#FormStatic{
+    width: 1000px;
+    margin: auto;
+    padding: 10px 40px;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+#Form{
+    width: 1000px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+#SelectOpt{
+  padding: 21px 20px;
+}
+
+
+/*# sourceMappingURL=estilos.css.map */

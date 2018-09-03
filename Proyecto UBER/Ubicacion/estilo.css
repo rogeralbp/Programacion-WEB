@@ -1,0 +1,40 @@
+body{
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     
+}
+#Form2{
+    width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+#Form3{
+    width: 600px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing:border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+    color: aqua;
+}
+#map{
+    height: 200px;  /* The height is 400 pixels */
+    width: 80%;  /* The width is the width of the web page */
+   }
+#btn{
+    padding: 10px;
+    background: none;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 20px 40px;
+    display: inline-block;
+    border: 5px solid #001F3F;
+    transition: 0.3s all ease; }
+    .seccionToggle button:hover {
+      border: 5px solid #0074D9;
+      color: #0074D9; 
+}

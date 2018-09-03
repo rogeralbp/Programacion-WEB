@@ -1,0 +1,103 @@
+body {
+	margin: 0;
+	padding: 0;
+    background:url(../img/uber.jpg);
+    background-attachment: fixed;
+    font: 1em arial, helvetica, sans-serif;
+}
+
+#formulario{
+    background:rgba(57, 58, 61, 0.938) ;
+    width: 49.5%;
+    padding: 15px;    
+    margin: 25px auto;
+    border-radius: 5px;
+}
+
+ h2 {
+    font: bold 100% verdana, arial, helvetica, sans-serif;
+    font-size: 30px;
+	color: rgb(19, 144, 167);
+	text-align: center;
+    margin-top: 20px; 
+}
+
+.opciones{
+    display: flex;
+    list-style: none;
+}
+
+.opciones li{
+    width: 100%;
+    height: 30px;
+    flex-wrap: row;
+    text-align: center;
+    padding: 5px 0px;
+    background-color: rgb(131, 139, 247);    	
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.opciones li a{
+    text-decoration: none;
+    color: black;
+}
+
+input{
+    background:white ; 
+    font-size: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    font: 1em arial, helvetica, sans-serif;
+    color: black;
+}
+
+input:focus{
+border: 2px solid darkblue;
+}
+
+input[type="submit"]{
+    width: 100%;
+    color: white;
+    font: 1em arial, helvetica, sans-serif; 
+    background: #000;    
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 15.s ease;
+}
+
+#ayuda-contraseña{
+    text-align: right;
+    margin-bottom: 40px;
+}
+
+/*----------ANIMACIONES------*/
+#ayuda:hover,.opciones li:hover{
+    background:white ;
+    transition: all 0.3s linear;
+}
+
+input[type="submit"]:hover{
+
+    background-color: rgba(7, 190, 84, 0.897);
+}
+
+#ayuda:link,#ayuda:visited {
+    font-size: 30px;
+    color: #f70;
+}
+
+/*-------- CAMBIO DE VENTANAS -------*/
+
+.ventana-sistema{
+    padding: 10px;
+    display: none;
+}
+
+.ventana-sistema:nth-child(2){
+    display: block;
+}

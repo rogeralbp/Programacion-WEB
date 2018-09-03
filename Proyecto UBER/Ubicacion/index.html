@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/flatly/bootstrap.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="estilo.css"><link rel="stylesheet" href="AlertifyJS/css/alertify.min.css" />
+	<link rel="stylesheet" href="AlertifyJS/css/alertify.min.css" />
+	<link rel="stylesheet" href="AlertifyJS/css/themes/semantic.min.css" />
+	<script src="AlertifyJS/alertify.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+
+        <form action="Form2" id="Form2">
+            <form action="Form1">
+            <h3>Inicio</h3>
+                <input type="date" value="Inicio" name="Inicio" id="Fecha">
+                <input type="text" value="Partida">
+                <input type="text" value="Llegada">
+                <input type="button" value="Hacer viaje" id="btn">
+            </form>
+            <form action="Form3" id="Form3">
+                <div id="map">Map</div>
+            </form>
+        </form>
+
+    </div>
+
+
+
+
+
+
+  <!--Script del mapa-->
+  <div id="map"></div>
+  <script>
+         // Initialize and add the map
+         
+         function initMap() {
+           // The location of Uluru
+           var uluru = {lat:10.4046592, lng:-84.2121216};
+           // The map, centered at Uluru
+           var map = new google.maps.Map(
+               document.getElementById('map'), {zoom: 4, center: uluru});
+           // The marker, positioned at Uluru
+           var marker = new google.maps.Marker({position: uluru, map: map});
+         }
+  </script>
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9GOm1zXOClSIwRYACB00xTa9ECFlQyuo&callback=initMap">
+</script>
+<script src="main.js"></script>
+</body>
+</html>
