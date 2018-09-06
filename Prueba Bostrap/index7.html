@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Responsive Design</title>
+    <!---->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!---->
+    
+    <style media="screen">
+    
+    div{
+        font-size: 30px;
+    }
+
+    @media (min-width:570px){/*pequeño*/
+        body{
+            background: red;
+        }
+        #small{
+            background: white;
+            width: 25%;
+        }
+    }
+    
+    @media (min-width:768px){/*mediano*/
+        body{
+            background: blue;
+        }
+        #medium{
+            background: white;
+            width: 25%;
+        }
+    }
+    
+    @media (min-width:992px){/*grande*/
+        body{
+            background: green;
+        }
+        #large{
+            background: white;
+            width: 25%;
+        }
+    }
+
+    @media (min-width:1200px){/*extra grande*/
+        body{
+            background: yellow;
+        }
+        #extra-large{
+            background: white;
+            width: 25%;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <div class="bg-red w-25 p-3" id="small">
+        SMALL
+    </div>
+    <hr>
+    <div class="bg-red w-25 p-3" id="medium">
+        MEDIUM
+    </div>
+    <hr>
+    <div class="bg-red w-25 p-3" id="large">
+        LARGE
+    </div>    
+    <hr>
+    <div class="bg-red w-25 p-3" id="extra-large">
+        EXTRA LARGE
+    </div>
+    
+    <!---->    
+    <!---->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!---->
+</body>
+</html>
