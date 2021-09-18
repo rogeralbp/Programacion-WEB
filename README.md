@@ -1,2 +1,4 @@
-# Programacion-WEB
-INICIOS EN LA PROGRAMACION WEB 2018
+# Web Development - Firsts Steps
+Workshops worked in the Web Applications Programming course 2018 (June- August).
+
+
